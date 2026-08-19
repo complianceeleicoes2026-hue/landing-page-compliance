@@ -24,7 +24,7 @@
     }
   </script>
   <style>
-    /* CSS para animação fluida das ondas */
+    /* CSS para animação de ondas com amplitude pronunciada e movimento suave */
     .waves-container {
       position: absolute;
       bottom: 0;
@@ -37,7 +37,7 @@
       position: relative;
       display: block;
       width: calc(200% + 1.3px);
-      height: 60px;
+      height: 90px;
     }
     @keyframes moveWave {
       0% { transform: translateX(0); }
@@ -45,10 +45,10 @@
       100% { transform: translateX(-50%); }
     }
     .wave-animated {
-      animation: moveWave 12s linear infinite;
+      animation: moveWave 8s ease-in-out infinite alternate;
     }
     .wave-animated-slow {
-      animation: moveWave 20s linear infinite reverse;
+      animation: moveWave 14s ease-in-out infinite alternate-reverse;
     }
   </style>
 </head>
@@ -77,14 +77,14 @@
     </div>
   </header>
 
-  <!-- Hero Section com Ondas Animadas -->
-  <section class="relative bg-gradient-to-br from-brand-darkBlue via-blue-900 to-brand-blue text-white pt-16 pb-28 px-6 overflow-hidden">
+  <!-- Hero Section com Ondas Animadas Harmoniosas -->
+  <section class="relative bg-gradient-to-br from-brand-darkBlue via-blue-900 to-brand-blue text-white pt-16 pb-32 px-6 overflow-hidden">
     <div class="absolute -top-20 -left-20 w-96 h-96 bg-brand-blue rounded-full blur-3xl opacity-30 animate-pulse"></div>
     <div class="absolute top-1/2 -right-20 w-80 h-80 bg-brand-green rounded-full blur-3xl opacity-20"></div>
 
     <div class="relative max-w-4xl mx-auto text-center space-y-6 z-10">
       <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-xs font-semibold text-blue-200 uppercase tracking-widest">
-        <i class="fas fa-shield-alt text-brand-green"></i> Guia Completo • Eleições 2026[cite: 1, 2]
+        <i class="fas fa-shield-alt text-brand-green"></i> Guia Completo • Eleições 2026
       </span>
       
       <h2 class="text-3xl sm:text-5xl font-black leading-tight tracking-tight">
@@ -92,12 +92,12 @@
       </h2>
       
       <p class="text-blue-100 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-        Manual prático com todas as regras, limites de gastos e prazos da Justiça Eleitoral para garantir a aprovação total das suas contas[cite: 1, 2].
+        Manual prático com todas as regras, limites de gastos e prazos da Justiça Eleitoral para garantir a aprovação total das suas contas.
       </p>
 
       <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
         <a href="#guia-completo" class="bg-brand-green hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-full shadow-xl shadow-emerald-900/30 transition flex items-center justify-center gap-2">
-          <i class="fas fa-book-open"></i> Acessar Guia Interativo Complete[cite: 1, 2]
+          <i class="fas fa-book-open"></i> Acessar Guia Interativo Completo
         </a>
         <button onclick="openPdfModal()" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-full border border-white/30 backdrop-blur-md transition flex items-center justify-center gap-2">
           <i class="fas fa-eye text-amber-400"></i> Visualizar PDF na Tela
@@ -105,13 +105,13 @@
       </div>
     </div>
 
-    <!-- Divisória com Ondas Flutuantes e Animadas -->
+    <!-- Divisória de Ondas Fluídas e Marcantes -->
     <div class="waves-container">
-      <svg class="wave-svg wave-animated-slow opacity-40 text-blue-300" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0 C150,90 350,-40 500,40 C650,120 900,10 1200,40 L1200,120 L0,120 Z" fill="currentColor"></path>
+      <svg class="wave-svg wave-animated-slow opacity-30 text-blue-300" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C150,90 350,-40 500,60 C650,140 900,10 1200,60 L1200,120 L0,120 Z" fill="currentColor"></path>
       </svg>
-      <svg class="wave-svg wave-animated text-brand-lightBg -mt-12" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0 C300,90 600,-40 900,50 C1050,95 1120,20 1200,40 L1200,120 L0,120 Z" fill="currentColor"></path>
+      <svg class="wave-svg wave-animated text-brand-lightBg -mt-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,20 C200,100 450,-20 700,70 C950,130 1100,30 1200,50 L1200,120 L0,120 Z" fill="currentColor"></path>
       </svg>
     </div>
   </section>
@@ -120,32 +120,32 @@
   <section class="max-w-7xl mx-auto px-6 py-12">
     <div class="text-center space-y-2 mb-8">
       <h3 class="text-2xl sm:text-3xl font-black text-brand-darkBlue">Quadro-Resumo de Prazos e Valores</h3>
-      <p class="text-brand-gray text-sm max-w-xl mx-auto">Consulte os números principais das eleições de 2026[cite: 1, 2].</p>
+      <p class="text-brand-gray text-sm max-w-xl mx-auto">Consulte os números principais das eleições de 2026.</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       <div class="bg-white p-5 rounded-2xl shadow-sm border border-blue-100">
         <span class="text-xs font-bold text-brand-blue uppercase">Identificação Obrigatória</span>
-        <p class="text-xl font-extrabold text-slate-900 mt-1">R$ 1.064,10 / dia[cite: 1, 2]</p>
-        <p class="text-xs text-brand-gray mt-1">Depósitos via PIX, TED/DOC ou cheque nominal[cite: 1, 2].</p>
+        <p class="text-xl font-extrabold text-slate-900 mt-1">R$ 1.064,10 / dia</p>
+        <p class="text-xs text-brand-gray mt-1">Depósitos via PIX, TED/DOC ou cheque nominal.</p>
       </div>
 
       <div class="bg-white p-5 rounded-2xl shadow-sm border border-blue-100">
         <span class="text-xs font-bold text-brand-blue uppercase">Abertura de Contas</span>
-        <p class="text-xl font-extrabold text-slate-900 mt-1">Até 10 dias pós-CNPJ[cite: 1, 2]</p>
-        <p class="text-xs text-brand-gray mt-1">Banco tem até 3 dias para acatar[cite: 1, 2].</p>
+        <p class="text-xl font-extrabold text-slate-900 mt-1">Até 10 dias pós-CNPJ</p>
+        <p class="text-xs text-brand-gray mt-1">Banco tem até 3 dias para acatar.</p>
       </div>
 
       <div class="bg-white p-5 rounded-2xl shadow-sm border border-blue-100">
         <span class="text-xs font-bold text-brand-blue uppercase">Teto Dep. Estadual/RO</span>
-        <p class="text-xl font-extrabold text-slate-900 mt-1">R$ 1.270.629,01[cite: 1, 2]</p>
-        <p class="text-xs text-brand-gray mt-1">Recursos próprios até R$ 127.062,90 (10%)[cite: 1, 2].</p>
+        <p class="text-xl font-extrabold text-slate-900 mt-1">R$ 1.270.629,01</p>
+        <p class="text-xs text-brand-gray mt-1">Recursos próprios até R$ 127.062,90 (10%).</p>
       </div>
 
       <div class="bg-white p-5 rounded-2xl shadow-sm border border-blue-100">
         <span class="text-xs font-bold text-brand-blue uppercase">Prestação Parcial</span>
-        <p class="text-xl font-extrabold text-slate-900 mt-1">09 a 13/09/2026[cite: 1, 2]</p>
-        <p class="text-xs text-brand-gray mt-1">Referente às despesas até 08/09/2026[cite: 1, 2].</p>
+        <p class="text-xl font-extrabold text-slate-900 mt-1">09 a 13/09/2026</p>
+        <p class="text-xs text-brand-gray mt-1">Referente às despesas até 08/09/2026.</p>
       </div>
     </div>
   </section>
@@ -154,7 +154,7 @@
   <section id="guia-completo" class="max-w-5xl mx-auto px-6 py-12">
     <div class="text-center space-y-2 mb-10">
       <h3 class="text-3xl font-black text-brand-darkBlue">Manual Completo de Orientações Contábeis</h3>
-      <p class="text-brand-gray">Clique nos tópicos abaixo para ver todas as especificações detalhadas do PDF[cite: 1, 2].</p>
+      <p class="text-brand-gray">Clique nos tópicos abaixo para ver todas as especificações detalhadas do PDF.</p>
     </div>
 
     <div class="space-y-4">
@@ -162,29 +162,29 @@
       <!-- Tópico 1 -->
       <div class="bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
         <button onclick="toggleAccordion('acc1')" class="w-full p-6 text-left font-extrabold text-lg text-brand-darkBlue flex justify-between items-center bg-blue-50/50 hover:bg-blue-50 transition">
-          <span>1. CNPJ e Abertura de Contas Bancárias[cite: 1, 2]</span>
+          <span>1. CNPJ e Abertura de Contas Bancárias</span>
           <i id="acc1-icon" class="fas fa-chevron-down text-brand-blue transition-transform"></i>
         </button>
         <div id="acc1" class="hidden p-6 space-y-4 text-sm text-slate-700 border-t border-blue-50">
-          <p><strong>Emissão do Cartão CNPJ:</strong> Deve ser retirado junto ao TSE após 48h da entrega do RRC, pelo sistema CANDex[cite: 1, 2]. 
-            <a href="https://spce-cnpj.tse.jus.br/spce2016.cnpj/internet/#/eleicoes/6257" target="_blank" class="text-brand-blue font-semibold underline">Acessar sistema CANDex[cite: 1, 2]</a>
+          <p><strong>Emissão do Cartão CNPJ:</strong> Deve ser retirado junto ao TSE após 48h da entrega do RRC, pelo sistema CANDex. 
+            <a href="https://spce-cnpj.tse.jus.br/spce2016.cnpj/internet/#/eleicoes/6257" target="_blank" class="text-brand-blue font-semibold underline">Acessar sistema CANDex</a>
           </p>
           <div>
-            <strong>1.1 Tipos de conta bancária:</strong>[cite: 1, 2]
+            <strong>1.1 Tipos de conta bancária:</strong>
             <ul class="list-disc pl-5 mt-1 space-y-1">
-              <li><strong>FEFC:</strong> Fundo Especial de Financiamento de Campanha (recursos de partidos)[cite: 1, 2].</li>
-              <li><strong>FP:</strong> Fundo Partidário (recursos de partidos)[cite: 1, 2].</li>
-              <li><strong>OR:</strong> Outros Recursos (para receber recursos do próprio candidato ou doações de pessoas físicas)[cite: 1, 2].</li>
+              <li><strong>FEFC:</strong> Fundo Especial de Financiamento de Campanha (recursos de partidos).</li>
+              <li><strong>FP:</strong> Fundo Partidário (recursos de partidos).</li>
+              <li><strong>OR:</strong> Outros Recursos (para receber recursos do próprio candidato ou doações de pessoas físicas).</li>
             </ul>
           </div>
           <div>
-            <strong>1.2 Requerimento de Abertura de Contas (RAC):</strong>[cite: 1, 2]
-            <p class="mt-1">Deve ser gerado pelo sistema RAC. <a href="https://rac.tse.jus.br/rac/#/eleitoral" target="_blank" class="text-brand-blue font-semibold underline">Acessar Sistema RAC[cite: 1, 2]</a></p>
-            <p class="mt-1">Obrigatória a abertura de no mínimo 1 conta OR em até 10 dias após o CNPJ[cite: 1, 2]. Não é permitida transferência entre contas (ex: de FEFC para OR)[cite: 1, 2].</p>
+            <strong>1.2 Requerimento de Abertura de Contas (RAC):</strong>
+            <p class="mt-1">Deve ser gerado pelo sistema RAC. <a href="https://rac.tse.jus.br/rac/#/eleitoral" target="_blank" class="text-brand-blue font-semibold underline">Acessar Sistema RAC</a></p>
+            <p class="mt-1">Obrigatória a abertura de no mínimo 1 conta OR em até 10 dias após o CNPJ. Não é permitida transferência entre contas (ex: de FEFC para OR).</p>
           </div>
           <div>
-            <strong>1.3 Identificação e Nomenclatura das contas:</strong>[cite: 1, 2]
-            <p class="mt-1">Nomeação dos extratos no banco (limite de 25 caracteres)[cite: 1, 2]. Exemplo: <code class="bg-slate-100 px-2 py-0.5 rounded text-brand-blue">EL 2026 NOME CARGO OR</code>[cite: 1, 2]</p>
+            <strong>1.3 Identificação e Nomenclatura das contas:</strong>
+            <p class="mt-1">Nomeação dos extratos no banco (limite de 25 caracteres). Exemplo: <code class="bg-slate-100 px-2 py-0.5 rounded text-brand-blue">EL 2026 NOME CARGO OR</code></p>
           </div>
         </div>
       </div>
@@ -192,14 +192,14 @@
       <!-- Tópico 2 -->
       <div class="bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
         <button onclick="toggleAccordion('acc2')" class="w-full p-6 text-left font-extrabold text-lg text-brand-darkBlue flex justify-between items-center bg-blue-50/50 hover:bg-blue-50 transition">
-          <span>2. Sistema CONTA+JE e Movimentação Financeira[cite: 1, 2]</span>
+          <span>2. Sistema CONTA+JE e Movimentação Financeira</span>
           <i id="acc2-icon" class="fas fa-chevron-down text-brand-blue transition-transform"></i>
         </button>
         <div id="acc2" class="hidden p-6 space-y-3 text-sm text-slate-700 border-t border-blue-50">
-          <p>As despesas só poderão ser efetuadas após a abertura da conta e cadastro no CONTA+JE[cite: 1, 2].</p>
-          <p>Depósitos acima de <strong>R$ 1.064,10</strong> por dia devem ser obrigatoriamente identificados via PIX, TED/DOC ou cheque nominal[cite: 1, 2]. Recibos eleitorais devem ser informados em até <strong>72 horas</strong> no sistema CONTA+JE[cite: 1, 2].</p>
+          <p>As despesas só poderão ser efetuadas após a abertura da conta e cadastro no CONTA+JE.</p>
+          <p>Depósitos acima de <strong>R$ 1.064,10</strong> por dia devem ser obrigatoriamente identificados via PIX, TED/DOC ou cheque nominal. Recibos eleitorais devem ser informados em até <strong>72 horas</strong> no sistema CONTA+JE.</p>
           <div class="p-3 bg-amber-50 border-l-4 border-amber-500 text-amber-900 font-medium">
-            ⚠️ <strong>Atenção:</strong> Arrecadação e pagamentos fora das contas de campanha ensejam a desaprovação de contas e podem acarretar o cancelamento da candidatura ou cassação do diploma[cite: 1, 2].
+            ⚠️ <strong>Atenção:</strong> Arrecadação e pagamentos fora das contas de campanha ensejam a desaprovação de contas e podem acarretar o cancelamento da candidatura ou cassação do diploma.
           </div>
         </div>
       </div>
@@ -207,14 +207,14 @@
       <!-- Tópico 3 -->
       <div class="bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
         <button onclick="toggleAccordion('acc3')" class="w-full p-6 text-left font-extrabold text-lg text-brand-darkBlue flex justify-between items-center bg-blue-50/50 hover:bg-blue-50 transition">
-          <span>3. Regras de Doações e Limites[cite: 1, 2]</span>
+          <span>3. Regras de Doações e Limites</span>
           <i id="acc3-icon" class="fas fa-chevron-down text-brand-blue transition-transform"></i>
         </button>
         <div id="acc3" class="hidden p-6 space-y-3 text-sm text-slate-700 border-t border-blue-50">
           <ul class="list-disc pl-5 space-y-2">
-            <li><strong>Pessoas Físicas:</strong> Podem doar até 10% dos rendimentos brutos do ano-calendário anterior (Lei nº 9.504/1997)[cite: 1, 2].</li>
-            <li><strong>Recursos Próprios:</strong> O candidato pode doar à própria campanha até 10% do teto de gastos do cargo (Ex: Dep. Estadual/RO teto de R$ 1.270.629,01 -> limite próprio de R$ 127.062,90)[cite: 1, 2].</li>
-            <li><strong>Fontes Vedadas:</strong> Proibido doação em espécie ou estimável vindas de Pessoas Jurídicas, Origem Estrangeira ou Pessoa Física permissionária de serviço público[cite: 1, 2].</li>
+            <li><strong>Pessoas Físicas:</strong> Podem doar até 10% dos rendimentos brutos do ano-calendário anterior (Lei nº 9.504/1997).</li>
+            <li><strong>Recursos Próprios:</strong> O candidato pode doar à própria campanha até 10% do teto de gastos do cargo (Ex: Dep. Estadual/RO teto de R$ 1.270.629,01 -> limite próprio de R$ 127.062,90).</li>
+            <li><strong>Fontes Vedadas:</strong> Proibido doação em espécie ou estimável vindas de Pessoas Jurídicas, Origem Estrangeira ou Pessoa Física permissionária de serviço público.</li>
           </ul>
         </div>
       </div>
@@ -222,28 +222,28 @@
       <!-- Tópico 4 e 5 -->
       <div class="bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
         <button onclick="toggleAccordion('acc4')" class="w-full p-6 text-left font-extrabold text-lg text-brand-darkBlue flex justify-between items-center bg-blue-50/50 hover:bg-blue-50 transition">
-          <span>4 e 5. Prazos de Despesas e Material de Campanha[cite: 1, 2]</span>
+          <span>4 e 5. Prazos de Despesas e Material de Campanha</span>
           <i id="acc4-icon" class="fas fa-chevron-down text-brand-blue transition-transform"></i>
         </button>
         <div id="acc4" class="hidden p-6 space-y-3 text-sm text-slate-700 border-t border-blue-50">
-          <p><strong>Data-limite para contrair despesas:</strong> Dia da eleição (04/10/2026)[cite: 1, 2].</p>
-          <p><strong>Material Impresso:</strong> Todo impresso deve conter CNPJ/CPF do responsável pela confecção, de quem contratou e a tiragem[cite: 1, 2]. Separe um exemplar e fotografe o montante para comprovação contábil[cite: 1, 2].</p>
+          <p><strong>Data-limite para contrair despesas:</strong> Dia da eleição (04/10/2026).</p>
+          <p><strong>Material Impresso:</strong> Todo impresso deve conter CNPJ/CPF do responsável pela confecção, de quem contratou e a tiragem. Separe um exemplar e fotografe o montante para comprovação contábil.</p>
         </div>
       </div>
 
       <!-- Tópico 6 -->
       <div class="bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
         <button onclick="toggleAccordion('acc5')" class="w-full p-6 text-left font-extrabold text-lg text-brand-darkBlue flex justify-between items-center bg-blue-50/50 hover:bg-blue-50 transition">
-          <span>6. Formas de Pagamento e Sublimites de Gastos[cite: 1, 2]</span>
+          <span>6. Formas de Pagamento e Sublimites de Gastos</span>
           <i id="acc5-icon" class="fas fa-chevron-down text-brand-blue transition-transform"></i>
         </button>
         <div id="acc5" class="hidden p-6 space-y-3 text-sm text-slate-700 border-t border-blue-50">
-          <p><strong>Formas aceitas:</strong> Cheque nominal cruzado, transferência bancária identificada, débito em conta, cartão de débito e PIX[cite: 1, 2].</p>
-          <p><strong>Sublimites em relação ao total gasto:</strong>[cite: 1, 2]</p>
+          <p><strong>Formas aceitas:</strong> Cheque nominal cruzado, transferência bancária identificada, débito em conta, cartão de débito e PIX.</p>
+          <p><strong>Sublimites em relação ao total gasto:</strong></p>
           <ul class="list-disc pl-5 space-y-1">
-            <li>Alimentação pessoal: até 10%[cite: 1, 2].</li>
-            <li>Aluguel de veículos automotores: até 20%[cite: 1, 2].</li>
-            <li>Contratação de militância de rua: até 224 pessoas para Deputado Estadual/RO (sem vínculo empregatício e sem INSS)[cite: 1, 2].</li>
+            <li>Alimentação pessoal: até 10%.</li>
+            <li>Aluguel de veículos automotores: até 20%.</li>
+            <li>Contratação de militância de rua: até 224 pessoas para Deputado Estadual/RO (sem vínculo empregatício e sem INSS).</li>
           </ul>
         </div>
       </div>
@@ -251,12 +251,12 @@
       <!-- Tópico 8 e 9 -->
       <div class="bg-white rounded-2xl shadow-sm border border-blue-100 overflow-hidden">
         <button onclick="toggleAccordion('acc6')" class="w-full p-6 text-left font-extrabold text-lg text-brand-darkBlue flex justify-between items-center bg-blue-50/50 hover:bg-blue-50 transition">
-          <span>8 e 9. Prestação de Contas e Gastos com Combustível[cite: 1, 2]</span>
+          <span>8 e 9. Prestação de Contas e Gastos com Combustível</span>
           <i id="acc6-icon" class="fas fa-chevron-down text-brand-blue transition-transform"></i>
         </button>
         <div id="acc6" class="hidden p-6 space-y-3 text-sm text-slate-700 border-t border-blue-50">
-          <p><strong>Prestação de Contas Final:</strong> Entregar ao escritório até 5 dias após a eleição (prazo legal TSE de 30 dias)[cite: 1, 2].</p>
-          <p><strong>Combustível em Carreata:</strong> Limite de até 10 litros por veículo[cite: 1, 2]. É necessário listar placas, nomes dos proprietários, colher assinaturas e fotos do evento[cite: 1, 2]. Comunicação à Justiça Eleitoral com 24h de antecedência caso haja distribuição[cite: 1, 2].</p>
+          <p><strong>Prestação de Contas Final:</strong> Entregar ao escritório até 5 dias após a eleição (prazo legal TSE de 30 dias).</p>
+          <p><strong>Combustível em Carreata:</strong> Limite de até 10 litros por veículo. É necessário listar placas, nomes dos proprietários, colher assinaturas e fotos do evento. Comunicação à Justiça Eleitoral com 24h de antecedência caso haja distribuição.</p>
         </div>
       </div>
 
@@ -267,14 +267,14 @@
   <section class="max-w-5xl mx-auto my-12 px-6">
     <div class="bg-gradient-to-r from-brand-blue to-blue-700 rounded-3xl p-8 sm:p-12 text-white shadow-xl text-center space-y-6">
       <h3 class="text-2xl sm:text-3xl font-black">Canais para Envio de Documentos</h3>
-      <p class="text-blue-100 text-sm max-w-xl mx-auto">Envie todas as notas e comprovantes por estes canais para a correta prestação de contas[cite: 1, 2].</p>
+      <p class="text-blue-100 text-sm max-w-xl mx-auto">Envie todas as notas e comprovantes por estes canais para a correta prestação de contas.</p>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
         <a href="https://wa.me/5569981622000" target="_blank" class="bg-white text-slate-900 p-4 rounded-2xl flex items-center justify-center gap-3 font-bold hover:bg-emerald-50 transition">
-          <i class="fab fa-whatsapp text-2xl text-brand-green"></i> (69) 98162-2000[cite: 1, 2]
+          <i class="fab fa-whatsapp text-2xl text-brand-green"></i> (69) 98162-2000
         </a>
         <a href="mailto:compliance.eleicoes2026@gmail.com" class="bg-white text-slate-900 p-4 rounded-2xl flex items-center justify-center gap-3 font-bold hover:bg-blue-50 transition truncate">
-          <i class="fas fa-envelope text-2xl text-brand-blue"></i> compliance.eleicoes2026@gmail.com[cite: 1, 2]
+          <i class="fas fa-envelope text-2xl text-brand-blue"></i> compliance.eleicoes2026@gmail.com
         </a>
       </div>
     </div>
@@ -293,9 +293,8 @@
         </button>
       </div>
       <div class="flex-1 bg-slate-100">
-        <!-- Cole a URL direta do seu PDF no atributo src abaixo, ou use um visualizador -->
         <iframe src="ORIENTACOES_CONTABEIS_CAMPANHA_2026.pdf" class="w-full h-full border-none">
-          <p>Seu navegador não suporta visualização de PDF. <a href="ORIENTACOES_CONTABEIS_CAMPANHA_2026.pdf" target="_blank" class="text-brand-blue font-bold">Clique aqui para baixar o PDF[cite: 1, 2].</a></p>
+          <p>Seu navegador não suporta visualização de PDF. <a href="ORIENTACOES_CONTABEIS_CAMPANHA_2026.pdf" target="_blank" class="text-brand-blue font-bold">Clique aqui para baixar o PDF.</a></p>
         </iframe>
       </div>
     </div>
@@ -305,8 +304,8 @@
   <footer class="bg-brand-darkBlue text-gray-400 py-10 px-6 border-t border-blue-900/50">
     <div class="max-w-4xl mx-auto text-center space-y-3">
       <p class="text-white font-bold">Compliance Assessoria & Consultoria</p>
-      <p class="text-xs text-blue-200/70">Responsável Técnico: Boris Alexander Gonçalves de Souza — Contador CRC-RO nº 003040/O[cite: 1, 2]</p>
-      <p class="text-xs text-gray-400">Dúvidas gerais: WhatsApp (69) 98140-1414[cite: 1, 2]</p>
+      <p class="text-xs text-blue-200/70">Responsável Técnico: Boris Alexander Gonçalves de Souza — Contador CRC-RO nº 003040/O</p>
+      <p class="text-xs text-gray-400">Dúvidas gerais: WhatsApp (69) 98140-1414</p>
     </div>
   </footer>
 
