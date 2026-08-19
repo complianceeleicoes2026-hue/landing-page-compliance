@@ -1,136 +1,215 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Compliance - Assessoria Contábil e Jurídica Eleitoral 2026</title>
+  <title>Compliance - Assessoria & Consultoria Eleitoral 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0052FF',
+              darkBlue: '#0A2540',
+              green: '#00B050',
+              lightBg: '#F4F7FF',
+              gray: '#4A5568'
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+<body class="bg-brand-lightBg text-gray-800 font-sans antialiased overflow-x-hidden">
 
   <!-- Header / Navegação -->
-  <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <div>
-        <h1 class="text-2xl font-bold tracking-wide text-amber-500">COMPLIANCE</h1>
-        <p class="text-xs text-gray-400">Assessoria & Consultoria Eleitoral 2026</p>
+  <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-blue-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <!-- Ícone que remete ao Globo + Check da Logo -->
+        <div class="relative w-10 h-10 flex items-center justify-center bg-gradient-to-tr from-brand-blue to-blue-400 rounded-full text-white shadow-md">
+          <i class="fas fa-check text-brand-green font-black text-xl drop-shadow"></i>
+        </div>
+        <div>
+          <h1 class="text-2xl font-black tracking-tight text-brand-blue leading-none">Compliance</h1>
+          <p class="text-[10px] font-bold tracking-wider text-brand-gray uppercase">Assessoria & Consultoria</p>
+        </div>
       </div>
-      <a href="https://wa.me/5569981401414" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 transition">
-        <i class="fab font-bold fa-whatsapp"></i> Tirar Dúvidas
+      <a href="https://wa.me/5569981401414" target="_blank" class="bg-brand-green hover:bg-emerald-600 text-white px-5 py-2.5 rounded-full font-semibold text-sm flex items-center gap-2 shadow-lg shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5">
+        <i class="fab fa-whatsapp text-lg"></i> <span class="hidden sm:inline">Tirar Dúvidas</span>
       </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-slate-800 text-white py-16 px-4 border-b-4 border-amber-500">
-    <div class="max-w-4xl mx-auto text-center space-y-6">
-      <span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
-        Guia Prático • Eleições 2026
-      </span>
-      <h2 class="text-3xl md:text-5xl font-extrabold leading-tight">
-        Segurança Contábil e Jurídica para sua Campanha Eleitoral
+  <!-- Hero Section com Formas Fluidas -->
+  <section class="relative bg-gradient-to-br from-brand-darkBlue via-blue-900 to-brand-blue text-white py-20 px-6 overflow-hidden">
+    <!-- Elementos orgânicos/fluidos de fundo (Blobs) -->
+    <div class="absolute -top-20 -left-20 w-96 h-96 bg-brand-blue rounded-full blur-3xl opacity-30 animate-pulse"></div>
+    <div class="absolute top-1/2 -right-20 w-80 h-80 bg-brand-green rounded-full blur-3xl opacity-20"></div>
+
+    <div class="relative max-w-4xl mx-auto text-center space-y-6">
+      <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-xs font-semibold text-blue-200 uppercase tracking-widest">
+        <i class="fas fa-shield-alt text-brand-green"></i> Guia Prático • Eleições 2026[cite: 1]
+      </div>
+      
+      <h2 class="text-3xl sm:text-5xl font-black leading-tight tracking-tight">
+        Segurança Jurídica e Contábil para a sua Campanha
       </h2>
-      <p class="text-gray-300 text-lg max-w-2xl mx-auto">
-        Evite a desaprovação de contas e garanta a regularidade do seu registro de candidatura com nossa assessoria especializada.
+      
+      <p class="text-blue-100 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        Garantimos a regularidade total da sua prestação de contas com rigor técnico e conformidade com a Justiça Eleitoral.
       </p>
+
       <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#tabela" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 rounded-lg transition shadow-lg">
-          Ver Quadro-Resumo 2026
+        <a href="#regras" class="bg-brand-green hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-full shadow-xl shadow-emerald-900/30 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+          <i class="fas fa-list-check"></i> Regras & Limites 2026[cite: 1]
         </a>
-        <a href="#envio" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold px-6 py-3 rounded-lg border border-slate-600 transition">
-          Canais de Envio
+        <a href="#canais" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-full border border-white/30 backdrop-blur-md transition">
+          Canais de Envio[cite: 1]
         </a>
       </div>
     </div>
+
+    <!-- Divisória Fluida (Onda) -->
+    <div class="absolute bottom-0 left-0 right-0 leading-none">
+      <svg class="w-full h-12 text-brand-lightBg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.92,150.88,111.81,221.28,95.81Z" fill="currentColor"></path>
+      </svg>
+    </div>
   </section>
 
-  <!-- Prazos e Limites (Cards) -->
-  <section id="tabela" class="max-w-7xl mx-auto px-4 py-12">
-    <h3 class="text-2xl font-bold text-slate-900 mb-2 text-center">Quadro-Resumo das Regras Eleitorais</h3>
-    <p class="text-center text-gray-600 mb-8 max-w-xl mx-auto">Consulte os principais valores, limites e prazos definidos para as campanhas de 2026[cite: 1].</p>
+  <!-- Quadro Resumo -->
+  <section id="regras" class="max-w-7xl mx-auto px-6 py-16">
+    <div class="text-center space-y-2 mb-12">
+      <h3 class="text-3xl font-black text-brand-darkBlue">Quadro-Resumo Operacional</h3>
+      <p class="text-brand-gray max-w-xl mx-auto">Tabela prática de limites, prazos e obrigações para a campanha eleitoral de 2026[cite: 1].</p>
+    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
       <!-- Card 1 -->
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <div class="text-amber-500 text-2xl mb-2"><i class="fas fa-money-check-alt"></i></div>
-        <h4 class="font-bold text-gray-900 text-lg">Identificação do Doador</h4>
-        <p class="text-sm text-gray-600 mt-1">Doações <span class="font-bold text-gray-800">≥ R$ 1.064,10/dia</span> exigem identificação obrigatória via PIX, TED/DOC ou cheque nominal[cite: 1].</p>
+      <div class="bg-white p-8 rounded-3xl shadow-xl shadow-blue-900/5 border border-blue-50 relative overflow-hidden group hover:border-brand-blue/30 transition">
+        <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-blue group-hover:text-white transition">
+          <i class="fas fa-id-card"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-lg mb-2">Identificação de Doações</h4>
+        <p class="text-sm text-brand-gray leading-relaxed">
+          Valores <span class="font-bold text-brand-blue">≥ R$ 1.064,10/dia</span> exigem identificação obrigatória do CPF do doador via PIX, TED ou cheque nominal[cite: 1].
+        </p>
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <div class="text-amber-500 text-2xl mb-2"><i class="fas fa-university"></i></div>
-        <h4 class="font-bold text-gray-900 text-lg">Abertura de Contas</h4>
-        <p class="text-sm text-gray-600 mt-1">Até <span class="font-bold text-gray-800">10 dias</span> após a emissão do CNPJ[cite: 1]. Bancos têm até 3 dias para efetivar[cite: 1]. Obrigatória a conta OR[cite: 1].</p>
+      <div class="bg-white p-8 rounded-3xl shadow-xl shadow-blue-900/5 border border-blue-50 relative overflow-hidden group hover:border-brand-blue/30 transition">
+        <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-blue group-hover:text-white transition">
+          <i class="fas fa-university"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-lg mb-2">Contas Bancárias</h4>
+        <p class="text-sm text-brand-gray leading-relaxed">
+          Abertura em até <span class="font-bold text-brand-blue">10 dias</span> pós-CNPJ[cite: 1]. Obrigatória a conta Outros Recursos (OR)[cite: 1]. Banco tem 3 dias para acatar[cite: 1].
+        </p>
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <div class="text-amber-500 text-2xl mb-2"><i class="fas fa-chart-line"></i></div>
-        <h4 class="font-bold text-gray-900 text-lg">Teto de Gastos (Dep. Estadual/RO)</h4>
-        <p class="text-sm text-gray-600 mt-1">Limite total: <span class="font-bold text-gray-800">R$ 1.270.629,01</span>[cite: 1]. Recursos próprios do candidato até R$ 127.062,90 (10%)[cite: 1].</p>
+      <div class="bg-white p-8 rounded-3xl shadow-xl shadow-blue-900/5 border border-blue-50 relative overflow-hidden group hover:border-brand-blue/30 transition">
+        <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-blue group-hover:text-white transition">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-lg mb-2">Teto Dep. Estadual/RO</h4>
+        <p class="text-sm text-brand-gray leading-relaxed">
+          Limite de gastos: <span class="font-bold text-brand-blue">R$ 1.270.629,01</span>[cite: 1]. Uso de recursos próprios até <span class="font-bold text-brand-blue">R$ 127.062,90</span> (10%)[cite: 1].
+        </p>
       </div>
 
       <!-- Card 4 -->
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <div class="text-amber-500 text-2xl mb-2"><i class="fas fa-clock"></i></div>
-        <h4 class="font-bold text-gray-900 text-lg">Prestação de Contas Parcial</h4>
-        <p class="text-sm text-gray-600 mt-1">Período apurado até <span class="font-bold text-gray-800">08/09/2026</span>[cite: 1]. Envio à Justiça Eleitoral de <span class="font-bold text-gray-800">09 a 13/09/2026</span>[cite: 1].</p>
+      <div class="bg-white p-8 rounded-3xl shadow-xl shadow-blue-900/5 border border-blue-50 relative overflow-hidden group hover:border-brand-blue/30 transition">
+        <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-blue group-hover:text-white transition">
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-lg mb-2">Prestação Parcial</h4>
+        <p class="text-sm text-brand-gray leading-relaxed">
+          Apuração das despesas até <span class="font-bold text-brand-blue">08/09/2026</span>[cite: 1]. Prazo de envio à Justiça Eleitoral: <span class="font-bold text-brand-blue">09 a 13/09/2026</span>[cite: 1].
+        </p>
       </div>
 
       <!-- Card 5 -->
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <div class="text-amber-500 text-2xl mb-2"><i class="fas fa-users"></i></div>
-        <h4 class="font-bold text-gray-900 text-lg">Militância de Rua</h4>
-        <p class="text-sm text-gray-600 mt-1">Contratação de até <span class="font-bold text-gray-800">224 pessoas</span> para Deputado Estadual/RO[cite: 1]. Sem vínculo empregatício[cite: 1].</p>
+      <div class="bg-white p-8 rounded-3xl shadow-xl shadow-blue-900/5 border border-blue-50 relative overflow-hidden group hover:border-brand-blue/30 transition">
+        <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-blue group-hover:text-white transition">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-lg mb-2">Militância de Rua</h4>
+        <p class="text-sm text-brand-gray leading-relaxed">
+          Limite de contratação de até <span class="font-bold text-brand-blue">224 pessoas</span> para Deputado Estadual/RO[cite: 1]. Sem vínculo empregatício[cite: 1].
+        </p>
       </div>
 
       <!-- Card 6 -->
-      <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-        <div class="text-amber-500 text-2xl mb-2"><i class="fas fa-gas-pump"></i></div>
-        <h4 class="font-bold text-gray-900 text-lg">Combustível e Carreatas</h4>
-        <p class="text-sm text-gray-600 mt-1">Limite de <span class="font-bold text-gray-800">10 litros por veículo</span> em carreata[cite: 1]. Exige controle e comunicação prévia[cite: 1].</p>
+      <div class="bg-white p-8 rounded-3xl shadow-xl shadow-blue-900/5 border border-blue-50 relative overflow-hidden group hover:border-brand-blue/30 transition">
+        <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-brand-blue group-hover:text-white transition">
+          <i class="fas fa-gas-pump"></i>
+        </div>
+        <h4 class="font-bold text-slate-900 text-lg mb-2">Combustível em Carreata</h4>
+        <p class="text-sm text-brand-gray leading-relaxed">
+          Até <span class="font-bold text-brand-blue">10 litros por veículo</span>[cite: 1]. Evento deve ser comunicado com 24h de antecedência à Justiça Eleitoral[cite: 1].
+        </p>
       </div>
 
     </div>
   </section>
 
-  <!-- Seção de Envio de Documentos -->
-  <section id="envio" class="bg-amber-500 text-slate-950 py-12 px-4">
-    <div class="max-w-4xl mx-auto text-center space-y-4">
-      <h3 class="text-2xl md:text-3xl font-extrabold">Canais Oficiais para Envio de Documentos</h3>
-      <p class="text-slate-900 font-medium">
-        Todas as receitas e despesas devem ser enviadas em PDF ou foto legível para a correta prestação de contas[cite: 1].
-      </p>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 text-left">
-        <a href="https://wa.me/5569981622000" target="_blank" class="bg-slate-900 text-white p-4 rounded-lg flex items-center gap-4 hover:bg-slate-800 transition">
-          <i class="fab fa-whatsapp text-3xl text-green-400"></i>
-          <div>
-            <p class="text-xs text-gray-400">Enviar Documentos via WhatsApp</p>
-            <p class="font-bold text-lg">(69) 98162-2000</p>
-          </div>
-        </a>
+  <!-- Seção de Canais de Envio (Banner com Degradê Fluido) -->
+  <section id="canais" class="relative max-w-6xl mx-auto my-8 px-6">
+    <div class="bg-gradient-to-r from-brand-blue to-blue-700 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+      <!-- Glow Effect -->
+      <div class="absolute top-0 right-0 w-80 h-80 bg-brand-green/30 rounded-full blur-3xl"></div>
 
-        <a href="mailto:compliance.eleicoes2026@gmail.com" class="bg-slate-900 text-white p-4 rounded-lg flex items-center gap-4 hover:bg-slate-800 transition">
-          <i class="fas fa-envelope text-3xl text-amber-400"></i>
-          <div>
-            <p class="text-xs text-gray-400">Enviar por E-mail</p>
-            <p class="font-bold text-base">compliance.eleicoes2026@gmail.com</p>
-          </div>
-        </a>
+      <div class="relative z-10 text-center max-w-2xl mx-auto space-y-4">
+        <h3 class="text-2xl sm:text-3xl font-black">Envio Oficial de Documentos</h3>
+        <p class="text-blue-100 text-sm sm:text-base">
+          Envie todas as notas, recibos e receitas em PDF ou foto legível diretamente para os nossos canais exclusivos de atendimento[cite: 1].
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
+          <a href="https://wa.me/5569981622000" target="_blank" class="bg-white text-brand-darkBlue p-5 rounded-2xl font-bold flex items-center gap-4 hover:bg-emerald-50 transition shadow-lg">
+            <div class="w-12 h-12 rounded-xl bg-brand-green text-white flex items-center justify-center text-2xl flex-shrink-0">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="text-left">
+              <span class="block text-[11px] text-brand-gray uppercase tracking-wider font-bold">WhatsApp Documentos</span>
+              <span class="text-base font-extrabold text-slate-900">(69) 98162-2000</span>
+            </div>
+          </a>
+
+          <a href="mailto:compliance.eleicoes2026@gmail.com" class="bg-white text-brand-darkBlue p-5 rounded-2xl font-bold flex items-center gap-4 hover:bg-blue-50 transition shadow-lg">
+            <div class="w-12 h-12 rounded-xl bg-brand-blue text-white flex items-center justify-center text-xl flex-shrink-0">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="text-left truncate">
+              <span class="block text-[11px] text-brand-gray uppercase tracking-wider font-bold">E-mail Oficial</span>
+              <span class="text-xs sm:text-sm font-extrabold text-slate-900 truncate block">compliance.eleicoes2026@gmail.com</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Rodapé -->
-  <footer class="bg-slate-900 text-gray-400 py-8 px-4 text-center border-t border-slate-800">
-    <div class="max-w-4xl mx-auto space-y-2">
-      <p class="font-bold text-amber-500">Compliance Assessoria & Consultoria</p>
-      <p class="text-xs">Responsável Técnico: Boris Alexander Gonçalves de Souza — Contador CRC-RO nº 003040/O[cite: 1]</p>
-      <p class="text-xs text-gray-500 mt-4">Dúvidas gerais e esclarecimentos: WhatsApp (69) 98140-1414[cite: 1]</p>
+  <footer class="bg-brand-darkBlue text-gray-400 py-12 px-6 border-t border-blue-900/50 mt-16">
+    <div class="max-w-4xl mx-auto text-center space-y-4">
+      <div class="flex items-center justify-center gap-2">
+        <i class="fas fa-check-circle text-brand-green text-xl"></i>
+        <span class="text-white font-black text-xl tracking-tight">Compliance Assessoria & Consultoria</span>
+      </div>
+      <p class="text-xs text-blue-200/70">
+        Responsável Técnico: Boris Alexander Gonçalves de Souza — Contador CRC-RO nº 003040/O[cite: 1]
+      </p>
+      <div class="pt-4 border-t border-white/10 text-xs text-gray-400">
+        Dúvidas gerais e esclarecimentos: <span class="text-white font-semibold">WhatsApp (69) 98140-1414</span>[cite: 1]
+      </div>
     </div>
   </footer>
 
